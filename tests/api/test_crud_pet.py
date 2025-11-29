@@ -10,6 +10,7 @@ pet = Pet()
 
 @allure.story('Получение питомцев по категории')
 @allure.title('GET-запрос на получение питомцев с рандомным статусом')
+@allure.tag('api')
 def test_get_pets(url_api, _payload):
     params = {"status": _payload['status']}
     response = pet.get_pets(url_api + '/findByStatus', params=params)
@@ -20,6 +21,7 @@ def test_get_pets(url_api, _payload):
 
 @allure.story('Получение питомца по его id')
 @allure.title('GET-запрос на получение определенного питомца по его id')
+@allure.tag('api')
 def test_get_pet_id(url_api, _payload):
     with allure.step('Создаем питомца и получаем его id'):
         Allure.logining_allure_request_json(request_body=_payload, name='Request')
@@ -37,6 +39,7 @@ def test_get_pet_id(url_api, _payload):
 
 @allure.story('Создание питомца')
 @allure.title('Создаем питомца и проверяем, что питомец создался корректно.')
+@allure.tag('api')
 def test_post_create_pet(url_api, _payload):
     with allure.step('Создаем питомца'):
         Allure.logining_allure_request_json(request_body=_payload, name='Request')
@@ -60,6 +63,7 @@ def test_post_create_pet(url_api, _payload):
 
 @allure.story('Изменение параметров питомца')
 @allure.title('Создаем питомца и меняем его имя.')
+@allure.tag('api')
 def test_update_pet(url_api, _payload):
     with allure.step('Создаем питомца'):
         Allure.logining_allure_request_json(request_body=_payload, name='Request')
@@ -86,6 +90,7 @@ def test_update_pet(url_api, _payload):
 
 @allure.story('Удаление питомца')
 @allure.title('Проверка удаления питомца')
+@allure.tag('api')
 def test_delete_pet(url_api, _payload):
     with allure.step('Создаем питомца и получаем его id'):
         Allure.logining_allure_request_json(request_body=_payload, name='Request')
