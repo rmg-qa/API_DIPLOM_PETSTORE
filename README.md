@@ -17,6 +17,7 @@
    <code><img width="5%" title="PyCharm" src="images/pycharm.png"></code>
    <code><img width="5%" title="Pytest" src="images/pytest.png"></code>
    <code><img width="5%" title="Requests" src="images/requests.png"></code>
+   <code><img width="5%" title="Jsonschema" src="images/jsonschema.png"></code>
    <code><img width="5%" title="Jenkins" src="images/jenkins.png"></code>
    <code><img width="5%" title="Allure Report" src="images/allure_report.png"></code>
    <code><img width="5%" title="Allure TestOps" src="images/allure_testops.png"></code>
@@ -24,11 +25,11 @@
    <code><img width="5%" title="Telegram" src="images/tg.png"></code>
 </p>
 
-Для написания API-автотестов бесплатного сервиса "Petstore" использовались:
 * `Python v. 3.13`: язык программирования; 
 * `Pycharm`: среда разработки (IDE) для языка программирования Python;   
 * `PyTest`: библиотека модульного тестирования. В автотестах реализована параметризация;  
 * `Requests`: библиотека для работы с HTTP-запросами в Python;  
+* `jsonschema`: библиотека, которая позволяет определить ожидаемую структуру JSON-объекта;  
 * `Jenkins`: инструмент CI/CD - с помощью этого инструмента реализован удаленный запуск автотестов, отправка уведомлений в Telegram, интеграция с TMS;  
 * `ТестОпс`: TMS-платформа для управления тестированием программного обеспечения. Реализована интеграция с Jira;  
 * `Jira`: комплексная система управления проектами;  
