@@ -1,4 +1,4 @@
-# Дипломный проект API-тестов бесплатного сервиса "Petstore" 
+# Дипломный проект. Выполнение API-автотестов бесплатного сервиса "Petstore" 
 > [Petstore](https://petstore.swagger.io/#/ )
 > 
 ![Screenshoot](/images/petstore.png)
