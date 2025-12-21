@@ -90,7 +90,6 @@
 ### <img width="3%" title="Jira" src="images/jira.png"> Интеграция с Jira
 
 ![This is an image](images/jira_1.png)
-![This is an image](images/jira_2.png)
 
 
 <!-- Telegram -->
