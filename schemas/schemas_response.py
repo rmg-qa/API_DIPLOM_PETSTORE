@@ -149,3 +149,17 @@ delete_and_put_pet_schema = {
         "message"
     ]
 }
+
+get_the_number_of_pets_sold = {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "sold": {
+            "type": "integer"
+        }
+    },
+    "additionalProperties": True,
+    "required": [
+        "sold"
+    ]
+}

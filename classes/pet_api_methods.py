@@ -1,7 +1,8 @@
 import requests
 from jsonschema import validate
 from schemas.schemas_requests import create_pet, update_pet
-from schemas.schemas_response import response_create_pet, get_pet, delete_and_put_pet_schema
+from schemas.schemas_response import response_create_pet, get_pet, delete_and_put_pet_schema, \
+    get_the_number_of_pets_sold
 
 
 class PetApiMethods:
