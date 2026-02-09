@@ -3,6 +3,8 @@ import os
 import dotenv
 import allure
 import pytest
+import requests
+
 from classes.allure_attach import AllurePetLoggingMethods
 from classes.allure_attach import AllureLoggingMethods
 from classes.pet_api_methods import PetApiMethods
@@ -103,3 +105,9 @@ def test_delete_pet(generate_payload):
         repeat_the_deletion_of_the_created_pet = pet.delete_pet(url=base_url + '/pet', id_pet=id_new_pet)
         logging_helper.log_2_console(repeat_the_deletion_of_the_created_pet)
         assert repeat_the_deletion_of_the_created_pet.status_code == 404
+
+
+@allure.title('test api')
+def test_api_on_new_jenkins():
+    request = requests.get('https://jsonplaceholder.typicode.com/posts/1')
+    print(request.json())
